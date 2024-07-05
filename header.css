@@ -1,0 +1,46 @@
+header {
+  width: 100vw;
+  height: 50px;
+  font-family: var(--font-stack);
+  color: var(--primary-color);
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-weight: bold;
+  font-size: var(--font-size-normal);
+}
+.hamburger {
+  display: none;
+  font-size: var(--font-size-normal);
+}
+
+@media (max-width: 768px) {
+  nav {
+    max-width: 400px;
+  }
+  .links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    padding: 20px 40px;
+  }
+}
